@@ -14,7 +14,7 @@ module KuwaitiCivilId
       checksum = digits.pop
       coefficients = [2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2]
       digits.zip(coefficients).sum { |d, c| d * c }
-      calculated_checksum = 11 - (sun % 11)
+      calculated_checksum = 11 - (sum % 11)
       calculated_checksum == checksum
     end
   end
