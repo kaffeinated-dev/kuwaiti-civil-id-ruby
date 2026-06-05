@@ -8,6 +8,6 @@ class TestKuwaitiCivilId < Minitest::Test
   end
 
   def test_it_does_something_useful
-    assert false
+    refute ::KuwaitiCivilId::CivilIdValidator.valid?("123456789012")
   end
 end
