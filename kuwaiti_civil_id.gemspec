@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = ["info@kaffeinated.dev"]
 
   spec.summary = "A Ruby gem for validating and parsing Kuwaiti Civil ID numbers."
-  spec.description = "Provides functionality to validate the format of Kuwaiti Civil ID numbers and extract information such as birth date."
+  spec.description = "Validate the format of Kuwaiti Civil ID numbers and extract information such as birth date."
   spec.homepage = "https://github.com/kaffeinated-dev/kuwaiti-civil-id-ruby"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.2.0"

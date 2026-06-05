@@ -7,8 +7,11 @@ module KuwaitiCivilId
   class InvalidCivilIdError < Error; end
 
   class CivilIdValidator
+    # Validate Kuwaiti Civil ID numbers.
+    # Civil ID numbers start with either 2 or 3 and contain 12 digits.
     def self.valid?(id_number)
       return false unless id_number.to_s.match?(/\A\d{12}$\z/)
+      return false unless [2, 3].include?(id_number[0].to_i)
 
       digits = id_number.to_s.chars.map(&:to_i)
       checksum = digits.pop
