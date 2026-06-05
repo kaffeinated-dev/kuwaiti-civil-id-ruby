@@ -9,6 +9,7 @@ module KuwaitiCivilId
   class CivilIdValidator
     # Validate Kuwaiti Civil ID numbers.
     # Civil ID numbers start with either 2 or 3 and contain 12 digits.
+
     def self.valid?(id_number)
       return false unless id_number.to_s.match?(/\A\d{12}$\z/)
       return false unless [2, 3].include?(id_number[0].to_i)
@@ -23,6 +24,8 @@ module KuwaitiCivilId
   end
 
   class BirthdateExtractor
+    # Extract birth date from Civil ID number.
+
     def self.extract(id_number)
       raise InvalidCivilIdError unless CivilIdValidator.valid?(id_number)
 
