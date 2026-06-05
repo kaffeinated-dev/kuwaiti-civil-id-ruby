@@ -7,4 +7,4 @@
 * When interpreting the words and actions of others, participants should always assume good intentions.
 * Behaviour which can be reasonably considered harassment will not be tolerated.
 
-If you have any concerns about behaviour within this project, please contact us at ["aesmail@hey.com"](mailto:"aesmail@hey.com").
+If you have any concerns about behaviour within this project, please contact us at ["info@kaffeinated.dev"](mailto:"info@kaffeinated.dev").
