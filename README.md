@@ -1,8 +1,6 @@
 # KuwaitiCivilId
 
-TODO: Delete this and the text below, and describe your gem
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/kuwaiti_civil_id`. To experiment with that code, run `bin/console` for an interactive prompt.
+This gem provides a simple interface to validate and extract information from Kuwaiti Civil ID numbers. It checks the validity of the ID number and extracts the birth date.
 
 ## Installation
 
@@ -22,7 +20,15 @@ gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'kuwaiti_civil_id'
+KuwaitiCivilId::CivilIdValidator.valid?('123456789012')
+#=> false
+
+# assuming '295020101234' is a valid Kuwaiti Civil ID number
+KuwaitiCivilId::BirthdateExtractor.extract('295020101234')
+#=> #<Date: 1995-02-01>
+```
 
 ## Development
 
@@ -32,7 +38,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/kuwaiti_civil_id. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/kuwaiti_civil_id/blob/main/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/kaffeinated-dev/kuwaiti-civil-id-ruby. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/kaffeinated-dev/kuwaiti-civil-id-ruby/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -40,4 +46,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the KuwaitiCivilId project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/kuwaiti_civil_id/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the KuwaitiCivilId project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/kaffeinated-dev/kuwaiti-civil-id-ruby/blob/main/CODE_OF_CONDUCT.md).
